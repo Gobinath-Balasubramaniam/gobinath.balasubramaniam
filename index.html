@@ -14,7 +14,7 @@
     html,
     body {
       margin: 0;
-      padding: 0;
+      padding: 8px;
       width: 100%;
       overflow-x: hidden;
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -54,6 +54,28 @@
       margin: 1em 0 0.5em;
       color: #007acc;
       font-weight: 600;
+    }
+
+    .left-header {
+      text-align: center;
+    }
+
+    .circle-wrapper {
+      width: 160px;
+      height: 160px;
+      border: 3px solid #007acc;
+      border-radius: 50%;
+      padding: 10px;
+      display: inline-block;
+      box-sizing: border-box;
+    }
+
+    .circle-wrapper img {
+      width: 100%;
+      height: 100%;
+      border-radius: 50%;
+      object-fit: cover;
+      display: block;
     }
 
     .tagline {
@@ -262,7 +284,10 @@
 <body>
   <div class="container">
     <div class="left">
-      <div>
+      <div class="left-header">
+        <div class="circle-wrapper">
+          <img src="https://avatars.githubusercontent.com/u/43238424?v=4" alt="Gobinath Balasubramaniam" />
+        </div>
         <h1>Gobinath Balasubramaniam</h1>
         <p class="tagline">Frontend Architect | 13+ Years of Experience</p>
       </div>
@@ -384,14 +409,17 @@
       <div class="intro">
         <h2>Introduction</h2>
         <p>
-          Frontend Architect with 13+ years of experience building scalable, high-performance web applications using React, Angular, JavaScript, and AEM. Expert in leading teams, delivering complex projects, and crafting clean, reusable code for exceptional user experiences.
+          Frontend Architect with 13+ years of experience building scalable, high-performance web applications using
+          React, Angular, JavaScript, and AEM. Expert in leading teams, delivering complex projects, and crafting clean,
+          reusable code for exceptional user experiences.
         </p>
       </div>
 
       <div class="career-objective">
         <h2>Career Objective</h2>
         <p>
-          Seeking a leadership role to drive innovative frontend and full-stack solutions, mentor teams, and enhance user engagement through best practices and modern architecture.
+          Seeking a leadership role to drive innovative frontend and full-stack solutions, mentor teams, and enhance
+          user engagement through best practices and modern architecture.
         </p>
       </div>
 
@@ -485,5 +513,4 @@
     </div>
   </div>
 </body>
-
 </html>
